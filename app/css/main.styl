@@ -1,0 +1,88 @@
+@import bootstrap
+
+darkBlue = #0289cb
+lightBlue = #10befd
+vanilla = #fbfbfb
+balckish = #2B2F38
+
+
+bluebg()
+	background lightBlue
+	background -moz-linear-gradient(45deg,  lightBlue 0%, darkBlue 100%)
+	background -webkit-linear-gradient(45deg,  lightBlue 0%, darkBlue 100%)
+	background linear-gradient(45deg,  lightBlue 0%, darkBlue 100%)
+
+.darkBlue
+	fill darkBlue
+
+.lightBlue
+	fill lightBlue
+
+body
+	font-family 'Lato', sans-serif
+	font-size 1.8em
+	.center-block
+		float none
+	section
+		background-color vanilla
+		padding 100px 0
+		&.bg-dark
+			background-color balckish
+			color #fff
+
+h3
+	font-size 1.2em
+h4
+	font-size 1em
+img
+	width 100%
+
+
+header
+	&.bg-blue
+		bluebg()
+		padding 7%
+	figure
+		padding 7% 0 2%
+	.title
+		h1
+			text-transform uppercase
+			font-weight 900
+			font-size 30px
+			color #fff
+			margin 40px 0 90px
+
+.logo
+	width 120px
+	margin 30px auto 50px
+	img
+		max-height 125px
+
+#sobre
+	img
+		padding 5%
+	.quem-sou
+		position relative
+		bottom 15px
+
+#experiencia
+	h2
+		margin-bottom 70px
+	p
+		font-size 0.88em
+	.row
+		margin 30px 0
+
+#educacao
+	h2
+		margin-bottom 50px
+		margin-left -15px
+	.nav-stacked > li + li
+		margin 10px -15px
+	.curso
+		background-color #434658
+		figure
+			background-color white
+			padding 20px 40px
+	.capelo
+		margin 70px 0 0 70px
